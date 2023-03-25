@@ -1,0 +1,444 @@
+npm run bonus
+
+> webdriverio-tests@0.1.0 bonus
+> .\node_modules\.bin\wdio .\wdio.conf.js --spec .\test\specs\spentBonuses.spec.js
+
+
+Execution of 1 workers started at 2023-03-25T05:47:22.571Z
+
+2023-03-25T05:47:22.633Z INFO chromedriver: Initiate Chromedriver Launcher (v8.1.1)
+2023-03-25T05:47:22.634Z INFO @wdio/cli:launcher: Run onPrepare hook
+2023-03-25T05:47:22.637Z INFO chromedriver: Start Chromedriver (C:\Users\Osman\Documents\1Osman\Projects\QA\autotests\node_modules\chromedriver\lib\chromedriver\chromedriver.exe) with args --port=9515 --url-base=/
+2023-03-25T05:47:22.656Z INFO chromedriver: Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 9515  
+2023-03-25T05:47:22.656Z INFO chromedriver: Only local connections are allowed.
+2023-03-25T05:47:22.657Z INFO chromedriver: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+2023-03-25T05:47:22.668Z INFO chromedriver: ChromeDriver was started successfully.
+2023-03-25T05:47:22.752Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2023-03-25T05:47:22.754Z INFO @wdio/local-runner: Start worker 0-0 with arg: .\wdio.conf.js,--spec,.\test\specs\spentBonuses.spec.js
+[0-0] 2023-03-25T05:47:23.534Z INFO @wdio/local-runner: Run worker command: run
+[0-0] RUNNING in chrome - file:///C:/Users/Osman/Documents/1osman/Projects/QA/autotests/test/specs/spentBonuses.spec.js
+[0-0] 2023-03-25T05:47:23.707Z INFO webdriver: Initiate new session using the WebDriver protocol
+[0-0] 2023-03-25T05:47:23.790Z INFO webdriver: [POST] http://localhost:9515/session
+[0-0] 2023-03-25T05:47:23.790Z INFO webdriver: DATA {
+[0-0]   capabilities: {
+[0-0]     alwaysMatch: {
+[0-0]       browserName: 'chrome',
+[0-0]       'goog:chromeOptions': [Object],
+[0-0]       acceptInsecureCerts: true
+[0-0]     },
+[0-0]     firstMatch: [ {} ]
+[0-0]   },
+[0-0]   desiredCapabilities: {
+[0-0]     browserName: 'chrome',
+[0-0]     'goog:chromeOptions': { prefs: [Object] },
+[0-0]     acceptInsecureCerts: true
+[0-0]   }
+[0-0] }
+
+DevTools listening on ws://127.0.0.1:53017/devtools/browser/87ba0f1d-b63a-435e-8359-8a48272d6daa
+2023-03-25T05:47:24.273Z WARN chromedriver: [1679723244.261][WARNING]: This version of ChromeDriver has not been tested with Chrome version 111.
+2023-03-25T05:47:24.278Z WARN chromedriver: [1679723244.266][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to 
+the already connected DevToolsClient. Connection notification will not arrive.
+[0-0] 2023-03-25T05:47:24.296Z INFO webdriver: COMMAND navigateTo("http://167.114.201.175:5000/login")
+[0-0] 2023-03-25T05:47:24.296Z INFO webdriver: [POST] http://localhost:9515/session/63be670e18b7e5ad890e32e26df11529/url
+[0-0] 2023-03-25T05:47:24.296Z INFO webdriver: DATA { url: 'http://167.114.201.175:5000/login' }
+[0-0] 2023-03-25T05:47:34.685Z INFO webdriver: RESULT null
+[0-0] 2023-03-25T05:47:34.688Z INFO webdriver: COMMAND findElement("css selector", "input[name="userName"]")
+[0-0] 2023-03-25T05:47:34.689Z INFO webdriver: [POST] http://localhost:9515/session/63be670e18b7e5ad890e32e26df11529/element
+[0-0] 2023-03-25T05:47:34.689Z INFO webdriver: DATA { using: 'css selector', value: 'input[name="userName"]' }
+[0-0] 2023-03-25T05:47:34.700Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '8dae68f3-b29d-4141-8c1c-7ed080862582'
+[0-0] }
+[0-0] 2023-03-25T05:47:34.706Z INFO webdriver: COMMAND elementClear("8dae68f3-b29d-4141-8c1c-7ed080862582")
+[0-0] 2023-03-25T05:47:34.706Z INFO webdriver: [POST] http://localhost:9515/session/63be670e18b7e5ad890e32e26df11529/element/8dae68f3-b29d-4141-8c1c-7ed080862582/clear[0-0] 2023-03-25T05:47:34.729Z INFO webdriver: RESULT null
+[0-0] 2023-03-25T05:47:34.730Z INFO webdriver: COMMAND elementSendKeys("8dae68f3-b29d-4141-8c1c-7ed080862582", "Admin")
+[0-0] 2023-03-25T05:47:34.730Z INFO webdriver: [POST] http://localhost:9515/session/63be670e18b7e5ad890e32e26df11529/element/8dae68f3-b29d-4141-8c1c-7ed080862582/value[0-0] 2023-03-25T05:47:34.730Z INFO webdriver: DATA { text: 'Admin' }
+[0-0] 2023-03-25T05:47:34.760Z INFO webdriver: RESULT null
+[0-0] 2023-03-25T05:47:34.761Z INFO webdriver: COMMAND findElement("css selector", "input.password")
+[0-0] 2023-03-25T05:47:34.761Z INFO webdriver: [POST] http://localhost:9515/session/63be670e18b7e5ad890e32e26df11529/element
+[0-0] 2023-03-25T05:47:34.761Z INFO webdriver: DATA { using: 'css selector', value: 'input.password' }
+[0-0] 2023-03-25T05:47:34.769Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '977ab100-612a-4422-9cce-8f8d56ed95f4'
+[0-0] }
+[0-0] 2023-03-25T05:47:34.771Z INFO webdriver: COMMAND elementClear("977ab100-612a-4422-9cce-8f8d56ed95f4")
+[0-0] 2023-03-25T05:47:34.772Z INFO webdriver: [POST] http://localhost:9515/session/63be670e18b7e5ad890e32e26df11529/element/977ab100-612a-4422-9cce-8f8d56ed95f4/clear[0-0] 2023-03-25T05:47:34.793Z INFO webdriver: RESULT null
+[0-0] 2023-03-25T05:47:34.793Z INFO webdriver: COMMAND elementSendKeys("977ab100-612a-4422-9cce-8f8d56ed95f4", "Admin@Navi")
+[0-0] 2023-03-25T05:47:34.793Z INFO webdriver: [POST] http://localhost:9515/session/63be670e18b7e5ad890e32e26df11529/element/977ab100-612a-4422-9cce-8f8d56ed95f4/value[0-0] 2023-03-25T05:47:34.793Z INFO webdriver: DATA { text: 'Admin@Navi' }
+[0-0] 2023-03-25T05:47:34.822Z INFO webdriver: RESULT null
+[0-0] 2023-03-25T05:47:34.822Z INFO webdriver: COMMAND findElement("css selector", "button[type="submit"]")
+[0-0] 2023-03-25T05:47:34.822Z INFO webdriver: [POST] http://localhost:9515/session/63be670e18b7e5ad890e32e26df11529/element
+[0-0] 2023-03-25T05:47:34.822Z INFO webdriver: DATA { using: 'css selector', value: 'button[type="submit"]' }
+[0-0] 2023-03-25T05:47:34.831Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '57aec595-48dc-42b5-9a3d-534c96fc00c0'
+[0-0] }
+[0-0] 2023-03-25T05:47:34.834Z INFO webdriver: COMMAND elementClick("57aec595-48dc-42b5-9a3d-534c96fc00c0")
+[0-0] 2023-03-25T05:47:34.834Z INFO webdriver: [POST] http://localhost:9515/session/63be670e18b7e5ad890e32e26df11529/element/57aec595-48dc-42b5-9a3d-534c96fc00c0/click[0-0] 2023-03-25T05:47:34.865Z INFO webdriver: RESULT null
+[0-0] 2023-03-25T05:47:34.866Z INFO webdriver: COMMAND findElement("css selector", ".search-form.user-search-form.with-options")
+[0-0] 2023-03-25T05:47:34.866Z INFO webdriver: [POST] http://localhost:9515/session/63be670e18b7e5ad890e32e26df11529/element
+[0-0] 2023-03-25T05:47:34.866Z INFO webdriver: DATA {
+[0-0]   using: 'css selector',
+[0-0]   value: '.search-form.user-search-form.with-options'
+[0-0] }
+[0-0] 2023-03-25T05:47:34.875Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'no such element: Unable to locate element: {"method":"css selector","selector":".search-form.user-search-form.with-options"}\n' +
+[0-0]     '  (Session info: chrome=111.0.5563.111)',
+[0-0]   stacktrace: 'Backtrace:\n' +
+[0-0]     '\t(No symbol) [0x003837D3]\n' +
+[0-0]     '\t(No symbol) [0x00318B81]\n' +
+[0-0]     '\t(No symbol) [0x0021B36D]\n' +
+[0-0]     '\t(No symbol) [0x0024D382]\n' +
+[0-0]     '\t(No symbol) [0x0024D4BB]\n' +
+[0-0]     '\t(No symbol) [0x00283302]\n' +
+[0-0]     '\t(No symbol) [0x0026B464]\n' +
+[0-0]     '\t(No symbol) [0x00281215]\n' +
+[0-0]     '\t(No symbol) [0x0026B216]\n' +
+[0-0]     '\t(No symbol) [0x00240D97]\n' +
+[0-0]     '\t(No symbol) [0x0024253D]\n' +
+[0-0]     '\tGetHandleVerifier [0x005FABF2+2510930]\n' +
+[0-0]     '\tGetHandleVerifier [0x00628EC1+2700065]\n' +
+[0-0]     '\tGetHandleVerifier [0x0062C86C+2714828]\n' +
+[0-0]     '\tGetHandleVerifier [0x00433480+645344]\n' +
+[0-0]     '\t(No symbol) [0x00320FD2]\n' +
+[0-0]     '\t(No symbol) [0x00326C68]\n' +
+[0-0]     '\t(No symbol) [0x00326D4B]\n' +
+[0-0]     '\t(No symbol) [0x00330D6B]\n' +
+[0-0]     '\tBaseThreadInitThunk [0x753500F9+25]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7BBE+286]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7B8E+238]\n'
+[0-0] }
+[0-0] 2023-03-25T05:47:34.879Z INFO webdriver: COMMAND findElements("css selector", ".search-form.user-search-form.with-options")
+[0-0] 2023-03-25T05:47:34.880Z INFO webdriver: [POST] http://localhost:9515/session/63be670e18b7e5ad890e32e26df11529/elements
+[0-0] 2023-03-25T05:47:34.880Z INFO webdriver: DATA {
+[0-0]   using: 'css selector',
+[0-0]   value: '.search-form.user-search-form.with-options'
+[0-0] }
+[0-0] 2023-03-25T05:47:34.891Z INFO webdriver: RESULT []
+[0-0] 2023-03-25T05:47:35.380Z INFO webdriver: COMMAND findElements("css selector", ".search-form.user-search-form.with-options")
+[0-0] 2023-03-25T05:47:35.381Z INFO webdriver: [POST] http://localhost:9515/session/63be670e18b7e5ad890e32e26df11529/elements
+[0-0] 2023-03-25T05:47:35.381Z INFO webdriver: DATA {
+[0-0]   using: 'css selector',
+[0-0]   value: '.search-form.user-search-form.with-options'
+[0-0] }
+[0-0] 2023-03-25T05:47:35.388Z INFO webdriver: RESULT []
+[0-0] 2023-03-25T05:47:35.884Z INFO webdriver: COMMAND findElement("css selector", "app-client-total-bonus-spent-filter")
+[0-0] 2023-03-25T05:47:35.884Z INFO webdriver: [POST] http://localhost:9515/session/63be670e18b7e5ad890e32e26df11529/element
+[0-0] 2023-03-25T05:47:35.884Z INFO webdriver: DATA { using: 'css selector', value: 'app-client-total-bonus-spent-filter' }
+[0-0] 2023-03-25T05:47:35.886Z INFO webdriver: COMMAND findElements("css selector", ".search-form.user-search-form.with-options")
+[0-0] 2023-03-25T05:47:35.886Z INFO webdriver: [POST] http://localhost:9515/session/63be670e18b7e5ad890e32e26df11529/elements
+[0-0] 2023-03-25T05:47:35.886Z INFO webdriver: DATA {
+[0-0]   using: 'css selector',
+[0-0]   value: '.search-form.user-search-form.with-options'
+[0-0] }
+[0-0] 2023-03-25T05:47:35.898Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'no such element: Unable to locate element: {"method":"css selector","selector":"app-client-total-bonus-spent-filter"}\n' +
+[0-0]     '  (Session info: chrome=111.0.5563.111)',
+[0-0]   stacktrace: 'Backtrace:\n' +
+[0-0]     '\t(No symbol) [0x003837D3]\n' +
+[0-0]     '\t(No symbol) [0x00318B81]\n' +
+[0-0]     '\t(No symbol) [0x0021B36D]\n' +
+[0-0]     '\t(No symbol) [0x0024D382]\n' +
+[0-0]     '\t(No symbol) [0x0024D4BB]\n' +
+[0-0]     '\t(No symbol) [0x00283302]\n' +
+[0-0]     '\t(No symbol) [0x0026B464]\n' +
+[0-0]     '\t(No symbol) [0x00281215]\n' +
+[0-0]     '\t(No symbol) [0x0026B216]\n' +
+[0-0]     '\t(No symbol) [0x00240D97]\n' +
+[0-0]     '\t(No symbol) [0x0024253D]\n' +
+[0-0]     '\tGetHandleVerifier [0x005FABF2+2510930]\n' +
+[0-0]     '\tGetHandleVerifier [0x00628EC1+2700065]\n' +
+[0-0]     '\tGetHandleVerifier [0x0062C86C+2714828]\n' +
+[0-0]     '\tGetHandleVerifier [0x00433480+645344]\n' +
+[0-0]     '\t(No symbol) [0x00320FD2]\n' +
+[0-0]     '\t(No symbol) [0x00326C68]\n' +
+[0-0]     '\t(No symbol) [0x00326D4B]\n' +
+[0-0]     '\t(No symbol) [0x00330D6B]\n' +
+[0-0]     '\tBaseThreadInitThunk [0x753500F9+25]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7BBE+286]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7B8E+238]\n'
+[0-0] }
+[0-0] 2023-03-25T05:47:35.903Z INFO webdriver: COMMAND findElement("css selector", "app-client-total-bonus-spent-filter")
+[0-0] 2023-03-25T05:47:35.903Z INFO webdriver: [POST] http://localhost:9515/session/63be670e18b7e5ad890e32e26df11529/element
+[0-0] 2023-03-25T05:47:35.903Z INFO webdriver: DATA { using: 'css selector', value: 'app-client-total-bonus-spent-filter' }
+[0-0] 2023-03-25T05:47:35.905Z INFO webdriver: RESULT []
+[0-0] 2023-03-25T05:47:35.911Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'no such element: Unable to locate element: {"method":"css selector","selector":"app-client-total-bonus-spent-filter"}\n' +
+[0-0]     '  (Session info: chrome=111.0.5563.111)',
+[0-0]   stacktrace: 'Backtrace:\n' +
+[0-0]     '\t(No symbol) [0x003837D3]\n' +
+[0-0]     '\t(No symbol) [0x00318B81]\n' +
+[0-0]     '\t(No symbol) [0x0021B36D]\n' +
+[0-0]     '\t(No symbol) [0x0024D382]\n' +
+[0-0]     '\t(No symbol) [0x0024D4BB]\n' +
+[0-0]     '\t(No symbol) [0x00283302]\n' +
+[0-0]     '\t(No symbol) [0x0026B464]\n' +
+[0-0]     '\t(No symbol) [0x00281215]\n' +
+[0-0]     '\t(No symbol) [0x0026B216]\n' +
+[0-0]     '\t(No symbol) [0x00240D97]\n' +
+[0-0]     '\t(No symbol) [0x0024253D]\n' +
+[0-0]     '\tGetHandleVerifier [0x005FABF2+2510930]\n' +
+[0-0]     '\tGetHandleVerifier [0x00628EC1+2700065]\n' +
+[0-0]     '\tGetHandleVerifier [0x0062C86C+2714828]\n' +
+[0-0]     '\tGetHandleVerifier [0x00433480+645344]\n' +
+[0-0]     '\t(No symbol) [0x00320FD2]\n' +
+[0-0]     '\t(No symbol) [0x00326C68]\n' +
+[0-0]     '\t(No symbol) [0x00326D4B]\n' +
+[0-0]     '\t(No symbol) [0x00330D6B]\n' +
+[0-0]     '\tBaseThreadInitThunk [0x753500F9+25]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7BBE+286]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7B8E+238]\n'
+[0-0] }
+[18544:17096:0325/114736.350:ERROR:device_event_log_impl.cc(222)] [11:47:36.354] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+[18544:17096:0325/114736.350:ERROR:device_event_log_impl.cc(222)] [11:47:36.354] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+[0-0] 2023-03-25T05:47:36.381Z INFO webdriver: COMMAND findElements("css selector", ".search-form.user-search-form.with-options")
+[0-0] 2023-03-25T05:47:36.381Z INFO webdriver: [POST] http://localhost:9515/session/63be670e18b7e5ad890e32e26df11529/elements
+[0-0] 2023-03-25T05:47:36.381Z INFO webdriver: DATA {
+[0-0]   using: 'css selector',
+[0-0]   value: '.search-form.user-search-form.with-options'
+[0-0] }
+[0-0] 2023-03-25T05:47:36.387Z INFO webdriver: RESULT []
+[0-0] 2023-03-25T05:47:36.412Z INFO webdriver: COMMAND findElement("css selector", "app-client-total-bonus-spent-filter")
+[0-0] 2023-03-25T05:47:36.412Z INFO webdriver: [POST] http://localhost:9515/session/63be670e18b7e5ad890e32e26df11529/element
+[0-0] 2023-03-25T05:47:36.412Z INFO webdriver: DATA { using: 'css selector', value: 'app-client-total-bonus-spent-filter' }
+[0-0] 2023-03-25T05:47:36.420Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'no such element: Unable to locate element: {"method":"css selector","selector":"app-client-total-bonus-spent-filter"}\n' +
+[0-0]     '  (Session info: chrome=111.0.5563.111)',
+[0-0]   stacktrace: 'Backtrace:\n' +
+[0-0]     '\t(No symbol) [0x003837D3]\n' +
+[0-0]     '\t(No symbol) [0x00318B81]\n' +
+[0-0]     '\t(No symbol) [0x0021B36D]\n' +
+[0-0]     '\t(No symbol) [0x0024D382]\n' +
+[0-0]     '\t(No symbol) [0x0024D4BB]\n' +
+[0-0]     '\t(No symbol) [0x00283302]\n' +
+[0-0]     '\t(No symbol) [0x0026B464]\n' +
+[0-0]     '\t(No symbol) [0x00281215]\n' +
+[0-0]     '\t(No symbol) [0x0026B216]\n' +
+[0-0]     '\t(No symbol) [0x00240D97]\n' +
+[0-0]     '\t(No symbol) [0x0024253D]\n' +
+[0-0]     '\tGetHandleVerifier [0x005FABF2+2510930]\n' +
+[0-0]     '\tGetHandleVerifier [0x00628EC1+2700065]\n' +
+[0-0]     '\tGetHandleVerifier [0x0062C86C+2714828]\n' +
+[0-0]     '\tGetHandleVerifier [0x00433480+645344]\n' +
+[0-0]     '\t(No symbol) [0x00320FD2]\n' +
+[0-0]     '\t(No symbol) [0x00326C68]\n' +
+[0-0]     '\t(No symbol) [0x00326D4B]\n' +
+[0-0]     '\t(No symbol) [0x00330D6B]\n' +
+[0-0]     '\tBaseThreadInitThunk [0x753500F9+25]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7BBE+286]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7B8E+238]\n'
+[0-0] }
+[0-0] 2023-03-25T05:47:36.897Z INFO webdriver: COMMAND findElements("css selector", ".search-form.user-search-form.with-options")
+[0-0] 2023-03-25T05:47:36.897Z INFO webdriver: [POST] http://localhost:9515/session/63be670e18b7e5ad890e32e26df11529/elements
+[0-0] 2023-03-25T05:47:36.897Z INFO webdriver: DATA {
+[0-0]   using: 'css selector',
+[0-0]   value: '.search-form.user-search-form.with-options'
+[0-0] }
+[0-0] 2023-03-25T05:47:36.905Z INFO webdriver: COMMAND findElement("css selector", "app-client-total-bonus-spent-filter")
+[0-0] 2023-03-25T05:47:36.905Z INFO webdriver: [POST] http://localhost:9515/session/63be670e18b7e5ad890e32e26df11529/element
+[0-0] 2023-03-25T05:47:36.905Z INFO webdriver: DATA { using: 'css selector', value: 'app-client-total-bonus-spent-filter' }
+[0-0] 2023-03-25T05:47:36.907Z INFO webdriver: RESULT []
+[0-0] 2023-03-25T05:47:36.913Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'no such element: Unable to locate element: {"method":"css selector","selector":"app-client-total-bonus-spent-filter"}\n' +
+[0-0]     '  (Session info: chrome=111.0.5563.111)',
+[0-0]   stacktrace: 'Backtrace:\n' +
+[0-0]     '\t(No symbol) [0x003837D3]\n' +
+[0-0]     '\t(No symbol) [0x00318B81]\n' +
+[0-0]     '\t(No symbol) [0x0021B36D]\n' +
+[0-0]     '\t(No symbol) [0x0024D382]\n' +
+[0-0]     '\t(No symbol) [0x0024D4BB]\n' +
+[0-0]     '\t(No symbol) [0x00283302]\n' +
+[0-0]     '\t(No symbol) [0x0026B464]\n' +
+[0-0]     '\t(No symbol) [0x00281215]\n' +
+[0-0]     '\t(No symbol) [0x0026B216]\n' +
+[0-0]     '\t(No symbol) [0x00240D97]\n' +
+[0-0]     '\t(No symbol) [0x0024253D]\n' +
+[0-0]     '\tGetHandleVerifier [0x005FABF2+2510930]\n' +
+[0-0]     '\tGetHandleVerifier [0x00628EC1+2700065]\n' +
+[0-0]     '\tGetHandleVerifier [0x0062C86C+2714828]\n' +
+[0-0]     '\tGetHandleVerifier [0x00433480+645344]\n' +
+[0-0]     '\t(No symbol) [0x00320FD2]\n' +
+[0-0]     '\t(No symbol) [0x00326C68]\n' +
+[0-0]     '\t(No symbol) [0x00326D4B]\n' +
+[0-0]     '\t(No symbol) [0x00330D6B]\n' +
+[0-0]     '\tBaseThreadInitThunk [0x753500F9+25]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7BBE+286]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7B8E+238]\n'
+[0-0] }
+[0-0] 2023-03-25T05:47:37.379Z INFO webdriver: COMMAND findElements("css selector", ".search-form.user-search-form.with-options")
+[0-0] 2023-03-25T05:47:37.380Z INFO webdriver: [POST] http://localhost:9515/session/63be670e18b7e5ad890e32e26df11529/elements
+[0-0] 2023-03-25T05:47:37.380Z INFO webdriver: DATA {
+[0-0]   using: 'css selector',
+[0-0]   value: '.search-form.user-search-form.with-options'
+[0-0] }
+[0-0] 2023-03-25T05:47:37.385Z INFO webdriver: RESULT []
+[0-0] 2023-03-25T05:47:37.404Z INFO webdriver: COMMAND findElement("css selector", "app-client-total-bonus-spent-filter")
+[0-0] 2023-03-25T05:47:37.404Z INFO webdriver: [POST] http://localhost:9515/session/63be670e18b7e5ad890e32e26df11529/element
+[0-0] 2023-03-25T05:47:37.404Z INFO webdriver: DATA { using: 'css selector', value: 'app-client-total-bonus-spent-filter' }
+[0-0] 2023-03-25T05:47:37.415Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'no such element: Unable to locate element: {"method":"css selector","selector":"app-client-total-bonus-spent-filter"}\n' +
+[0-0]     '  (Session info: chrome=111.0.5563.111)',
+[0-0]   stacktrace: 'Backtrace:\n' +
+[0-0]     '\t(No symbol) [0x003837D3]\n' +
+[0-0]     '\t(No symbol) [0x00318B81]\n' +
+[0-0]     '\t(No symbol) [0x0021B36D]\n' +
+[0-0]     '\t(No symbol) [0x0024D382]\n' +
+[0-0]     '\t(No symbol) [0x0024D4BB]\n' +
+[0-0]     '\t(No symbol) [0x00283302]\n' +
+[0-0]     '\t(No symbol) [0x0026B464]\n' +
+[0-0]     '\t(No symbol) [0x00281215]\n' +
+[0-0]     '\t(No symbol) [0x0026B216]\n' +
+[0-0]     '\t(No symbol) [0x00240D97]\n' +
+[0-0]     '\t(No symbol) [0x0024253D]\n' +
+[0-0]     '\tGetHandleVerifier [0x005FABF2+2510930]\n' +
+[0-0]     '\tGetHandleVerifier [0x00628EC1+2700065]\n' +
+[0-0]     '\tGetHandleVerifier [0x0062C86C+2714828]\n' +
+[0-0]     '\tGetHandleVerifier [0x00433480+645344]\n' +
+[0-0]     '\t(No symbol) [0x00320FD2]\n' +
+[0-0]     '\t(No symbol) [0x00326C68]\n' +
+[0-0]     '\t(No symbol) [0x00326D4B]\n' +
+[0-0]     '\t(No symbol) [0x00330D6B]\n' +
+[0-0]     '\tBaseThreadInitThunk [0x753500F9+25]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7BBE+286]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7B8E+238]\n'
+[0-0] }
+[0-0] 2023-03-25T05:47:37.887Z INFO webdriver: COMMAND findElements("css selector", ".search-form.user-search-form.with-options")
+[0-0] 2023-03-25T05:47:37.887Z INFO webdriver: [POST] http://localhost:9515/session/63be670e18b7e5ad890e32e26df11529/elements
+[0-0] 2023-03-25T05:47:37.887Z INFO webdriver: DATA {
+[0-0]   using: 'css selector',
+[0-0]   value: '.search-form.user-search-form.with-options'
+[0-0] }
+[0-0] 2023-03-25T05:47:37.895Z INFO webdriver: RESULT []
+[0-0] 2023-03-25T05:47:37.917Z INFO webdriver: COMMAND findElement("css selector", "app-client-total-bonus-spent-filter")
+[0-0] 2023-03-25T05:47:37.917Z INFO webdriver: [POST] http://localhost:9515/session/63be670e18b7e5ad890e32e26df11529/element
+[0-0] 2023-03-25T05:47:37.918Z INFO webdriver: DATA { using: 'css selector', value: 'app-client-total-bonus-spent-filter' }
+[0-0] 2023-03-25T05:47:37.923Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'no such element: Unable to locate element: {"method":"css selector","selector":"app-client-total-bonus-spent-filter"}\n' +
+[0-0]     '  (Session info: chrome=111.0.5563.111)',
+[0-0]   stacktrace: 'Backtrace:\n' +
+[0-0]     '\t(No symbol) [0x003837D3]\n' +
+[0-0]     '\t(No symbol) [0x00318B81]\n' +
+[0-0]     '\t(No symbol) [0x0021B36D]\n' +
+[0-0]     '\t(No symbol) [0x0024D382]\n' +
+[0-0]     '\t(No symbol) [0x0024D4BB]\n' +
+[0-0]     '\t(No symbol) [0x00283302]\n' +
+[0-0]     '\t(No symbol) [0x0026B464]\n' +
+[0-0]     '\t(No symbol) [0x00281215]\n' +
+[0-0]     '\t(No symbol) [0x0026B216]\n' +
+[0-0]     '\t(No symbol) [0x00240D97]\n' +
+[0-0]     '\t(No symbol) [0x0024253D]\n' +
+[0-0]     '\tGetHandleVerifier [0x005FABF2+2510930]\n' +
+[0-0]     '\tGetHandleVerifier [0x00628EC1+2700065]\n' +
+[0-0]     '\tGetHandleVerifier [0x0062C86C+2714828]\n' +
+[0-0]     '\tGetHandleVerifier [0x00433480+645344]\n' +
+[0-0]     '\t(No symbol) [0x00320FD2]\n' +
+[0-0]     '\t(No symbol) [0x00326C68]\n' +
+[0-0]     '\t(No symbol) [0x00326D4B]\n' +
+[0-0]     '\t(No symbol) [0x00330D6B]\n' +
+[0-0]     '\tBaseThreadInitThunk [0x753500F9+25]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7BBE+286]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7B8E+238]\n'
+[0-0] }
+[0-0] 2023-03-25T05:47:38.385Z INFO webdriver: COMMAND findElements("css selector", ".search-form.user-search-form.with-options")
+[0-0] 2023-03-25T05:47:38.386Z INFO webdriver: [POST] http://localhost:9515/session/63be670e18b7e5ad890e32e26df11529/elements
+[0-0] 2023-03-25T05:47:38.386Z INFO webdriver: DATA {
+[0-0]   using: 'css selector',
+[0-0]   value: '.search-form.user-search-form.with-options'
+[0-0] }
+[0-0] 2023-03-25T05:47:38.403Z INFO webdriver: RESULT [
+[0-0]   {
+[0-0]     'element-6066-11e4-a52e-4f735466cecf': '33e08f69-ca85-4ba9-8709-76b0bfdb3bd4'
+[0-0]   }
+[0-0] ]
+[0-0] 2023-03-25T05:47:38.404Z INFO webdriver: COMMAND findElement("css selector", ".search-form.user-search-form.with-options")
+[0-0] 2023-03-25T05:47:38.405Z INFO webdriver: [POST] http://localhost:9515/session/63be670e18b7e5ad890e32e26df11529/element
+[0-0] 2023-03-25T05:47:38.405Z INFO webdriver: DATA {
+[0-0]   using: 'css selector',
+[0-0]   value: '.search-form.user-search-form.with-options'
+[0-0] }
+[0-0] 2023-03-25T05:47:38.406Z INFO webdriver: COMMAND findElement("css selector", "app-client-total-bonus-spent-filter")
+[0-0] 2023-03-25T05:47:38.406Z INFO webdriver: [POST] http://localhost:9515/session/63be670e18b7e5ad890e32e26df11529/element
+[0-0] 2023-03-25T05:47:38.406Z INFO webdriver: DATA { using: 'css selector', value: 'app-client-total-bonus-spent-filter' }
+[0-0] 2023-03-25T05:47:38.411Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '33e08f69-ca85-4ba9-8709-76b0bfdb3bd4'
+[0-0] }
+[0-0] 2023-03-25T05:47:38.415Z INFO webdriver: COMMAND elementClick("33e08f69-ca85-4ba9-8709-76b0bfdb3bd4")
+[0-0] 2023-03-25T05:47:38.416Z INFO webdriver: [POST] http://localhost:9515/session/63be670e18b7e5ad890e32e26df11529/element/33e08f69-ca85-4ba9-8709-76b0bfdb3bd4/click[0-0] 2023-03-25T05:47:38.417Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': 'e8248343-774b-4514-9185-42fdeae97363'
+[0-0] }
+[0-0] 2023-03-25T05:47:38.420Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2023-03-25T05:47:38.420Z INFO webdriver: [POST] http://localhost:9515/session/63be670e18b7e5ad890e32e26df11529/execute/sync
+[0-0] 2023-03-25T05:47:38.421Z INFO webdriver: DATA {
+[0-0]   script: 'isElementDisplayed(...) [8007 bytes]',
+[0-0]   args: [
+[0-0]     {
+[0-0]       'element-6066-11e4-a52e-4f735466cecf': 'e8248343-774b-4514-9185-42fdeae97363',
+[0-0]       ELEMENT: 'e8248343-774b-4514-9185-42fdeae97363'
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2023-03-25T05:47:38.449Z INFO webdriver: RESULT null
+[0-0] 2023-03-25T05:47:38.451Z INFO webdriver: RESULT false
+[0-0] 2023-03-25T05:47:38.903Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2023-03-25T05:47:38.904Z INFO webdriver: [POST] http://localhost:9515/session/63be670e18b7e5ad890e32e26df11529/execute/sync
+[0-0] 2023-03-25T05:47:38.904Z INFO webdriver: DATA {
+[0-0]   script: 'isElementDisplayed(...) [8007 bytes]',
+[0-0]   args: [
+[0-0]     {
+[0-0]       'element-6066-11e4-a52e-4f735466cecf': 'e8248343-774b-4514-9185-42fdeae97363',
+[0-0]       ELEMENT: 'e8248343-774b-4514-9185-42fdeae97363'
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2023-03-25T05:47:38.920Z INFO webdriver: RESULT true
+[0-0] 2023-03-25T05:47:38.921Z INFO webdriver: COMMAND findElement("xpath", "/html/body/app-root/app-clients/header/aside/div[1]/app-client-total-bonus-spent-filter/div/div[2]/div[3]")
+[0-0] 2023-03-25T05:47:38.921Z INFO webdriver: COMMAND elementClick("e8248343-774b-4514-9185-42fdeae97363")
+[0-0] 2023-03-25T05:47:38.921Z INFO webdriver: [POST] http://localhost:9515/session/63be670e18b7e5ad890e32e26df11529/element
+[0-0] 2023-03-25T05:47:38.921Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '/html/body/app-root/app-clients/header/aside/div[1]/app-client-total-bonus-spent-filter/div/div[2]/div[3]'
+[0-0] }
+[0-0] 2023-03-25T05:47:38.923Z INFO webdriver: [POST] http://localhost:9515/session/63be670e18b7e5ad890e32e26df11529/element/e8248343-774b-4514-9185-42fdeae97363/click[0-0] 2023-03-25T05:47:38.949Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': 'c7af1139-4c57-442c-9207-7ea0f0445bc7'
+[0-0] }
+[0-0] 2023-03-25T05:47:38.952Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2023-03-25T05:47:38.952Z INFO webdriver: [POST] http://localhost:9515/session/63be670e18b7e5ad890e32e26df11529/execute/sync
+[0-0] 2023-03-25T05:47:38.952Z INFO webdriver: DATA {
+[0-0]   script: 'isElementDisplayed(...) [8007 bytes]',
+[0-0]   args: [
+[0-0]     {
+[0-0]       'element-6066-11e4-a52e-4f735466cecf': 'c7af1139-4c57-442c-9207-7ea0f0445bc7',
+[0-0]       ELEMENT: 'c7af1139-4c57-442c-9207-7ea0f0445bc7'
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2023-03-25T05:47:39.000Z INFO webdriver: RESULT null
+[0-0] 2023-03-25T05:47:39.005Z INFO webdriver: RESULT true
+[0-0] 2023-03-25T05:47:39.005Z INFO webdriver: COMMAND elementClick("c7af1139-4c57-442c-9207-7ea0f0445bc7")
+[0-0] 2023-03-25T05:47:39.005Z INFO webdriver: [POST] http://localhost:9515/session/63be670e18b7e5ad890e32e26df11529/element/c7af1139-4c57-442c-9207-7ea0f0445bc7/click[0-0] 2023-03-25T05:47:39.044Z INFO webdriver: RESULT null
+[0-0] 2023-03-25T05:47:54.007Z INFO webdriver: COMMAND deleteSession()
+[0-0] 2023-03-25T05:47:54.007Z INFO webdriver: [DELETE] http://localhost:9515/session/63be670e18b7e5ad890e32e26df11529
+[0-0] 2023-03-25T05:47:54.009Z INFO webdriver: RESULT null
+[0-0] PASSED in chrome - file:///C:/Users/Osman/Documents/1osman/Projects/QA/autotests/test/specs/spentBonuses.spec.js
+2023-03-25T05:47:54.129Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2023-03-25T05:47:54.130Z INFO @wdio/cli:launcher: Run onComplete hook
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[chrome 111.0.5563.111 windows #0-0] Running: chrome (v111.0.5563.111) on windows
+[chrome 111.0.5563.111 windows #0-0] Session ID: 63be670e18b7e5ad890e32e26df11529
+[chrome 111.0.5563.111 windows #0-0]
+[chrome 111.0.5563.111 windows #0-0] » \test\specs\spentBonuses.spec.js
+[chrome 111.0.5563.111 windows #0-0] Login page
+[chrome 111.0.5563.111 windows #0-0]    ✓ should allow a user to log in successfully
+[chrome 111.0.5563.111 windows #0-0]    ✓ should open search form and perform spent bonus filtering
+[chrome 111.0.5563.111 windows #0-0]
+[chrome 111.0.5563.111 windows #0-0] 2 passing (29.7s)
+
+
+Spec Files:      1 passed, 1 total (100% completed) in 00:00:31

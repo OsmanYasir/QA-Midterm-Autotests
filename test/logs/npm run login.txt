@@ -1,0 +1,99 @@
+npm run login
+
+> webdriverio-tests@0.1.0 login
+> .\node_modules\.bin\wdio .\wdio.conf.js --spec .\test\specs\login.spec.js
+
+
+Execution of 1 workers started at 2023-03-25T06:59:17.036Z
+
+2023-03-25T06:59:17.097Z INFO chromedriver: Initiate Chromedriver Launcher (v8.1.1)
+2023-03-25T06:59:17.098Z INFO @wdio/cli:launcher: Run onPrepare hook
+2023-03-25T06:59:17.101Z INFO chromedriver: Start Chromedriver (C:\Users\Osman\Documents\1Osman\Projects\QA\autotests\node_modules\chromedriver\lib\chromedriver\chromedriver.exe) with args --port=9515 --url-base=/
+2023-03-25T06:59:17.121Z INFO chromedriver: Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 9515
+2023-03-25T06:59:17.121Z INFO chromedriver: Only local connections are allowed.
+2023-03-25T06:59:17.121Z INFO chromedriver: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+2023-03-25T06:59:17.131Z INFO chromedriver: ChromeDriver was started successfully.
+2023-03-25T06:59:17.230Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2023-03-25T06:59:17.231Z INFO @wdio/local-runner: Start worker 0-0 with arg: .\wdio.conf.js,--spec,.\test\specs\login.spec.js
+[0-0] 2023-03-25T06:59:18.036Z INFO @wdio/local-runner: Run worker command: run
+[0-0] RUNNING in chrome - file:///C:/Users/Osman/Documents/1osman/Projects/QA/autotests/test/specs/login.spec.js
+[0-0] 2023-03-25T06:59:18.223Z INFO webdriver: Initiate new session using the WebDriver protocol
+[0-0] 2023-03-25T06:59:18.310Z INFO webdriver: [POST] http://localhost:9515/session
+[0-0] 2023-03-25T06:59:18.310Z INFO webdriver: DATA {
+[0-0]   capabilities: {
+[0-0]     alwaysMatch: {
+[0-0]       browserName: 'chrome',
+[0-0]       'goog:chromeOptions': [Object],
+[0-0]       acceptInsecureCerts: true
+[0-0]     },
+[0-0]     firstMatch: [ {} ]
+[0-0]   },
+[0-0]   desiredCapabilities: {
+[0-0]     browserName: 'chrome',
+[0-0]     'goog:chromeOptions': { prefs: [Object] },
+[0-0]     acceptInsecureCerts: true
+[0-0]   }
+[0-0] }
+
+DevTools listening on ws://127.0.0.1:55926/devtools/browser/9f59aaca-2e13-436b-8dda-f908d6d1759f
+2023-03-25T06:59:18.765Z WARN chromedriver: [1679727558.774][WARNING]: This version of ChromeDriver has not been tested with Chrome version 111.
+2023-03-25T06:59:18.770Z WARN chromedriver: [1679727558.779][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to 
+the already connected DevToolsClient. Connection notification will not arrive.
+[0-0] 2023-03-25T06:59:18.800Z INFO webdriver: COMMAND navigateTo("http://167.114.201.175:5000/login")
+[0-0] 2023-03-25T06:59:18.800Z INFO webdriver: [POST] http://localhost:9515/session/849c0723c497da8df6d4ead44d7a6d87/url
+[0-0] 2023-03-25T06:59:18.800Z INFO webdriver: DATA { url: 'http://167.114.201.175:5000/login' }
+[0-0] 2023-03-25T06:59:28.851Z INFO webdriver: RESULT null
+[0-0] 2023-03-25T06:59:28.853Z INFO webdriver: COMMAND findElement("css selector", "input[name="userName"]")
+[0-0] 2023-03-25T06:59:28.854Z INFO webdriver: [POST] http://localhost:9515/session/849c0723c497da8df6d4ead44d7a6d87/element
+[0-0] 2023-03-25T06:59:28.854Z INFO webdriver: DATA { using: 'css selector', value: 'input[name="userName"]' }
+[0-0] 2023-03-25T06:59:28.864Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '3c08ee1c-36f7-45dd-b14c-e7bb19742924'
+[0-0] }
+[0-0] 2023-03-25T06:59:28.870Z INFO webdriver: COMMAND elementClear("3c08ee1c-36f7-45dd-b14c-e7bb19742924")
+[0-0] 2023-03-25T06:59:28.870Z INFO webdriver: [POST] http://localhost:9515/session/849c0723c497da8df6d4ead44d7a6d87/element/3c08ee1c-36f7-45dd-b14c-e7bb19742924/clear[0-0] 2023-03-25T06:59:28.892Z INFO webdriver: RESULT null
+[0-0] 2023-03-25T06:59:28.893Z INFO webdriver: COMMAND elementSendKeys("3c08ee1c-36f7-45dd-b14c-e7bb19742924", "Admin")
+[0-0] 2023-03-25T06:59:28.894Z INFO webdriver: [POST] http://localhost:9515/session/849c0723c497da8df6d4ead44d7a6d87/element/3c08ee1c-36f7-45dd-b14c-e7bb19742924/value[0-0] 2023-03-25T06:59:28.894Z INFO webdriver: DATA { text: 'Admin' }
+[0-0] 2023-03-25T06:59:28.922Z INFO webdriver: RESULT null
+[0-0] 2023-03-25T06:59:28.923Z INFO webdriver: COMMAND findElement("css selector", "input.password")
+[0-0] 2023-03-25T06:59:28.923Z INFO webdriver: [POST] http://localhost:9515/session/849c0723c497da8df6d4ead44d7a6d87/element
+[0-0] 2023-03-25T06:59:28.923Z INFO webdriver: DATA { using: 'css selector', value: 'input.password' }
+[0-0] 2023-03-25T06:59:28.932Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '28404670-3b4e-471e-af60-21825340c0db'
+[0-0] }
+[0-0] 2023-03-25T06:59:28.934Z INFO webdriver: COMMAND elementClear("28404670-3b4e-471e-af60-21825340c0db")
+[0-0] 2023-03-25T06:59:28.934Z INFO webdriver: [POST] http://localhost:9515/session/849c0723c497da8df6d4ead44d7a6d87/element/28404670-3b4e-471e-af60-21825340c0db/clear[0-0] 2023-03-25T06:59:28.958Z INFO webdriver: RESULT null
+[0-0] 2023-03-25T06:59:28.958Z INFO webdriver: COMMAND elementSendKeys("28404670-3b4e-471e-af60-21825340c0db", "Admin@Navi")
+[0-0] 2023-03-25T06:59:28.958Z INFO webdriver: [POST] http://localhost:9515/session/849c0723c497da8df6d4ead44d7a6d87/element/28404670-3b4e-471e-af60-21825340c0db/value[0-0] 2023-03-25T06:59:28.958Z INFO webdriver: DATA { text: 'Admin@Navi' }
+[0-0] 2023-03-25T06:59:28.988Z INFO webdriver: RESULT null
+[0-0] 2023-03-25T06:59:28.989Z INFO webdriver: COMMAND findElement("css selector", "button[type="submit"]")
+[0-0] 2023-03-25T06:59:28.989Z INFO webdriver: [POST] http://localhost:9515/session/849c0723c497da8df6d4ead44d7a6d87/element
+[0-0] 2023-03-25T06:59:28.989Z INFO webdriver: DATA { using: 'css selector', value: 'button[type="submit"]' }
+[0-0] 2023-03-25T06:59:28.998Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': 'a97ed40b-44cd-4562-b583-75710329862f'
+[0-0] }
+[0-0] 2023-03-25T06:59:29.000Z INFO webdriver: COMMAND elementClick("a97ed40b-44cd-4562-b583-75710329862f")
+[0-0] 2023-03-25T06:59:29.001Z INFO webdriver: [POST] http://localhost:9515/session/849c0723c497da8df6d4ead44d7a6d87/element/a97ed40b-44cd-4562-b583-75710329862f/click[0-0] 2023-03-25T06:59:29.036Z INFO webdriver: RESULT null
+[0-0] 2023-03-25T06:59:29.037Z INFO webdriver: COMMAND deleteSession()
+[0-0] 2023-03-25T06:59:29.038Z INFO webdriver: [DELETE] http://localhost:9515/session/849c0723c497da8df6d4ead44d7a6d87
+[0-0] 2023-03-25T06:59:29.070Z INFO webdriver: RESULT null
+[0-0] PASSED in chrome - file:///C:/Users/Osman/Documents/1osman/Projects/QA/autotests/test/specs/login.spec.js
+2023-03-25T06:59:29.187Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2023-03-25T06:59:29.188Z INFO @wdio/cli:launcher: Run onComplete hook
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[chrome 111.0.5563.111 windows #0-0] Running: chrome (v111.0.5563.111) on windows
+[chrome 111.0.5563.111 windows #0-0] Session ID: 849c0723c497da8df6d4ead44d7a6d87
+[chrome 111.0.5563.111 windows #0-0]
+[chrome 111.0.5563.111 windows #0-0] » \test\specs\login.spec.js
+[chrome 111.0.5563.111 windows #0-0] Login page
+[chrome 111.0.5563.111 windows #0-0]    ✓ should allow a user to log in successfully
+[chrome 111.0.5563.111 windows #0-0]
+[chrome 111.0.5563.111 windows #0-0] 1 passing (10.2s)
+
+
+Spec Files:      1 passed, 1 total (100% completed) in 00:00:12
+
+2023-03-25T06:59:29.192Z INFO @wdio/local-runner: Shutting down spawned worker
+2023-03-25T06:59:29.446Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully
+2023-03-25T06:59:29.447Z INFO @wdio/local-runner: shutting down

@@ -1,0 +1,714 @@
+npm run edit
+
+> webdriverio-tests@0.1.0 edit
+> .\node_modules\.bin\wdio .\wdio.conf.js --spec .\test\specs\edit.spec.js
+
+
+Execution of 1 workers started at 2023-03-25T06:57:47.781Z
+
+2023-03-25T06:57:47.845Z INFO chromedriver: Initiate Chromedriver Launcher (v8.1.1)
+2023-03-25T06:57:47.846Z INFO @wdio/cli:launcher: Run onPrepare hook
+2023-03-25T06:57:47.849Z INFO chromedriver: Start Chromedriver (C:\Users\Osman\Documents\1Osman\Projects\QA\autotests\node_modules\chromedriver\lib\chromedriver\chromedriver.exe) with args --port=9515 --url-base=/
+2023-03-25T06:57:47.871Z INFO chromedriver: Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 9515
+2023-03-25T06:57:47.871Z INFO chromedriver: Only local connections are allowed.
+2023-03-25T06:57:47.871Z INFO chromedriver: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+2023-03-25T06:57:47.880Z INFO chromedriver: ChromeDriver was started successfully.
+2023-03-25T06:57:47.965Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2023-03-25T06:57:47.967Z INFO @wdio/local-runner: Start worker 0-0 with arg: .\wdio.conf.js,--spec,.\test\specs\edit.spec.js
+[0-0] 2023-03-25T06:57:48.714Z INFO @wdio/local-runner: Run worker command: run
+[0-0] RUNNING in chrome - file:///C:/Users/Osman/Documents/1osman/Projects/QA/autotests/test/specs/edit.spec.js
+[0-0] 2023-03-25T06:57:48.883Z INFO webdriver: Initiate new session using the WebDriver protocol
+[0-0] 2023-03-25T06:57:48.964Z INFO webdriver: [POST] http://localhost:9515/session
+[0-0] 2023-03-25T06:57:48.964Z INFO webdriver: DATA {
+[0-0]   capabilities: {
+[0-0]     alwaysMatch: {
+[0-0]       browserName: 'chrome',
+[0-0]       'goog:chromeOptions': [Object],
+[0-0]       acceptInsecureCerts: true
+[0-0]     },
+[0-0]     firstMatch: [ {} ]
+[0-0]   },
+[0-0]   desiredCapabilities: {
+[0-0]     browserName: 'chrome',
+[0-0]     'goog:chromeOptions': { prefs: [Object] },
+[0-0]     acceptInsecureCerts: true
+[0-0]   }
+[0-0] }
+
+DevTools listening on ws://127.0.0.1:55889/devtools/browser/5a5932b6-4d72-42bb-8d9d-49e126f2675b
+2023-03-25T06:57:49.495Z WARN chromedriver: [1679727469.495][WARNING]: This version of ChromeDriver has not been tested with Chrome version 111.
+2023-03-25T06:57:49.500Z WARN chromedriver: [1679727469.500][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to 
+the already connected DevToolsClient. Connection notification will not arrive.
+[0-0] 2023-03-25T06:57:49.520Z INFO webdriver: COMMAND navigateTo("http://167.114.201.175:5000/login")
+[0-0] 2023-03-25T06:57:49.520Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/url
+[0-0] 2023-03-25T06:57:49.520Z INFO webdriver: DATA { url: 'http://167.114.201.175:5000/login' }
+[0-0] 2023-03-25T06:57:59.428Z INFO webdriver: RESULT null
+[0-0] 2023-03-25T06:57:59.430Z INFO webdriver: COMMAND findElement("css selector", "input[name="userName"]")
+[0-0] 2023-03-25T06:57:59.431Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/element
+[0-0] 2023-03-25T06:57:59.431Z INFO webdriver: DATA { using: 'css selector', value: 'input[name="userName"]' }
+[0-0] 2023-03-25T06:57:59.442Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '9b0c3d71-a68c-4770-9ab3-19644bf68c9f'
+[0-0] }
+[0-0] 2023-03-25T06:57:59.448Z INFO webdriver: COMMAND elementClear("9b0c3d71-a68c-4770-9ab3-19644bf68c9f")
+[0-0] 2023-03-25T06:57:59.448Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/element/9b0c3d71-a68c-4770-9ab3-19644bf68c9f/clear[0-0] 2023-03-25T06:57:59.472Z INFO webdriver: RESULT null
+[0-0] 2023-03-25T06:57:59.473Z INFO webdriver: COMMAND elementSendKeys("9b0c3d71-a68c-4770-9ab3-19644bf68c9f", "Admin")
+[0-0] 2023-03-25T06:57:59.473Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/element/9b0c3d71-a68c-4770-9ab3-19644bf68c9f/value[0-0] 2023-03-25T06:57:59.473Z INFO webdriver: DATA { text: 'Admin' }
+[0-0] 2023-03-25T06:57:59.502Z INFO webdriver: RESULT null
+[0-0] 2023-03-25T06:57:59.502Z INFO webdriver: COMMAND findElement("css selector", "input.password")
+[0-0] 2023-03-25T06:57:59.502Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/element
+[0-0] 2023-03-25T06:57:59.502Z INFO webdriver: DATA { using: 'css selector', value: 'input.password' }
+[0-0] 2023-03-25T06:57:59.511Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': 'ce7f903f-f973-4a7a-b45c-dd0e6a178701'
+[0-0] }
+[0-0] 2023-03-25T06:57:59.513Z INFO webdriver: COMMAND elementClear("ce7f903f-f973-4a7a-b45c-dd0e6a178701")
+[0-0] 2023-03-25T06:57:59.514Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/element/ce7f903f-f973-4a7a-b45c-dd0e6a178701/clear[0-0] 2023-03-25T06:57:59.533Z INFO webdriver: RESULT null
+[0-0] 2023-03-25T06:57:59.533Z INFO webdriver: COMMAND elementSendKeys("ce7f903f-f973-4a7a-b45c-dd0e6a178701", "Admin@Navi")
+[0-0] 2023-03-25T06:57:59.533Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/element/ce7f903f-f973-4a7a-b45c-dd0e6a178701/value[0-0] 2023-03-25T06:57:59.533Z INFO webdriver: DATA { text: 'Admin@Navi' }
+[0-0] 2023-03-25T06:57:59.565Z INFO webdriver: RESULT null
+[0-0] 2023-03-25T06:57:59.565Z INFO webdriver: COMMAND findElement("css selector", "button[type="submit"]")
+[0-0] 2023-03-25T06:57:59.565Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/element
+[0-0] 2023-03-25T06:57:59.565Z INFO webdriver: DATA { using: 'css selector', value: 'button[type="submit"]' }
+[0-0] 2023-03-25T06:57:59.574Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': 'c4df8214-f73c-41a4-a2ad-01d6af456b27'
+[0-0] }
+[0-0] 2023-03-25T06:57:59.576Z INFO webdriver: COMMAND elementClick("c4df8214-f73c-41a4-a2ad-01d6af456b27")
+[0-0] 2023-03-25T06:57:59.577Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/element/c4df8214-f73c-41a4-a2ad-01d6af456b27/click[0-0] 2023-03-25T06:57:59.610Z INFO webdriver: RESULT null
+[0-0] 2023-03-25T06:57:59.611Z INFO webdriver: COMMAND findElement("css selector", "table tbody tr:nth-child(1)")
+[0-0] 2023-03-25T06:57:59.612Z INFO webdriver: COMMAND findElement("css selector", "table tbody tr:nth-child(1)")
+[0-0] 2023-03-25T06:57:59.612Z INFO webdriver: COMMAND findElement("xpath", "/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input")
+[0-0] 2023-03-25T06:57:59.612Z INFO webdriver: COMMAND findElement("xpath", "/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input")
+[0-0] 2023-03-25T06:57:59.612Z INFO webdriver: COMMAND findElement("css selector", "button[name="save"]")
+[0-0] 2023-03-25T06:57:59.613Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/element
+[0-0] 2023-03-25T06:57:59.613Z INFO webdriver: DATA { using: 'css selector', value: 'table tbody tr:nth-child(1)' }
+[0-0] 2023-03-25T06:57:59.614Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/element
+[0-0] 2023-03-25T06:57:59.614Z INFO webdriver: DATA { using: 'css selector', value: 'table tbody tr:nth-child(1)' }
+[0-0] 2023-03-25T06:57:59.614Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/element
+[0-0] 2023-03-25T06:57:59.614Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input'
+[0-0] }
+[0-0] 2023-03-25T06:57:59.615Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/element
+[0-0] 2023-03-25T06:57:59.615Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input'
+[0-0] }
+[0-0] 2023-03-25T06:57:59.615Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/element
+[0-0] 2023-03-25T06:57:59.615Z INFO webdriver: DATA { using: 'css selector', value: 'button[name="save"]' }
+[0-0] 2023-03-25T06:57:59.632Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'no such element: Unable to locate element: {"method":"css selector","selector":"table tbody tr:nth-child(1)"}\n' +
+[0-0]     '  (Session info: chrome=111.0.5563.111)',
+[0-0]   stacktrace: 'Backtrace:\n' +
+[0-0]     '\t(No symbol) [0x003837D3]\n' +
+[0-0]     '\t(No symbol) [0x00318B81]\n' +
+[0-0]     '\t(No symbol) [0x0021B36D]\n' +
+[0-0]     '\t(No symbol) [0x0024D382]\n' +
+[0-0]     '\t(No symbol) [0x0024D4BB]\n' +
+[0-0]     '\t(No symbol) [0x00283302]\n' +
+[0-0]     '\t(No symbol) [0x0026B464]\n' +
+[0-0]     '\t(No symbol) [0x00281215]\n' +
+[0-0]     '\t(No symbol) [0x0026B216]\n' +
+[0-0]     '\t(No symbol) [0x00240D97]\n' +
+[0-0]     '\t(No symbol) [0x0024253D]\n' +
+[0-0]     '\tGetHandleVerifier [0x005FABF2+2510930]\n' +
+[0-0]     '\tGetHandleVerifier [0x00628EC1+2700065]\n' +
+[0-0]     '\tGetHandleVerifier [0x0062C86C+2714828]\n' +
+[0-0]     '\tGetHandleVerifier [0x00433480+645344]\n' +
+[0-0]     '\t(No symbol) [0x00320FD2]\n' +
+[0-0]     '\t(No symbol) [0x00326C68]\n' +
+[0-0]     '\t(No symbol) [0x00326D4B]\n' +
+[0-0]     '\t(No symbol) [0x00330D6B]\n' +
+[0-0]     '\tBaseThreadInitThunk [0x753500F9+25]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7BBE+286]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7B8E+238]\n'
+[0-0] }
+[0-0] 2023-03-25T06:57:59.636Z INFO webdriver: COMMAND findElement("css selector", "table tbody tr:nth-child(1)")
+[0-0] 2023-03-25T06:57:59.637Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/element
+[0-0] 2023-03-25T06:57:59.637Z INFO webdriver: DATA { using: 'css selector', value: 'table tbody tr:nth-child(1)' }
+[0-0] 2023-03-25T06:57:59.640Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'no such element: Unable to locate element: {"method":"css selector","selector":"table tbody tr:nth-child(1)"}\n' +
+[0-0]     '  (Session info: chrome=111.0.5563.111)',
+[0-0]   stacktrace: 'Backtrace:\n' +
+[0-0]     '\t(No symbol) [0x003837D3]\n' +
+[0-0]     '\t(No symbol) [0x00318B81]\n' +
+[0-0]     '\t(No symbol) [0x0021B36D]\n' +
+[0-0]     '\t(No symbol) [0x0024D382]\n' +
+[0-0]     '\t(No symbol) [0x0024D4BB]\n' +
+[0-0]     '\t(No symbol) [0x00283302]\n' +
+[0-0]     '\t(No symbol) [0x0026B464]\n' +
+[0-0]     '\t(No symbol) [0x00281215]\n' +
+[0-0]     '\t(No symbol) [0x0026B216]\n' +
+[0-0]     '\t(No symbol) [0x00240D97]\n' +
+[0-0]     '\t(No symbol) [0x0024253D]\n' +
+[0-0]     '\tGetHandleVerifier [0x005FABF2+2510930]\n' +
+[0-0]     '\tGetHandleVerifier [0x00628EC1+2700065]\n' +
+[0-0]     '\tGetHandleVerifier [0x0062C86C+2714828]\n' +
+[0-0]     '\tGetHandleVerifier [0x00433480+645344]\n' +
+[0-0]     '\t(No symbol) [0x00320FD2]\n' +
+[0-0]     '\t(No symbol) [0x00326C68]\n' +
+[0-0]     '\t(No symbol) [0x00326D4B]\n' +
+[0-0]     '\t(No symbol) [0x00330D6B]\n' +
+[0-0]     '\tBaseThreadInitThunk [0x753500F9+25]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7BBE+286]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7B8E+238]\n'
+[0-0] }
+[0-0] 2023-03-25T06:57:59.644Z INFO webdriver: COMMAND findElements("css selector", "table tbody tr:nth-child(1)")
+[0-0] 2023-03-25T06:57:59.645Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/elements
+[0-0] 2023-03-25T06:57:59.645Z INFO webdriver: DATA { using: 'css selector', value: 'table tbody tr:nth-child(1)' }
+[0-0] 2023-03-25T06:57:59.650Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input"}\n' +
+[0-0]     '  (Session info: chrome=111.0.5563.111)',
+[0-0]   stacktrace: 'Backtrace:\n' +
+[0-0]     '\t(No symbol) [0x003837D3]\n' +
+[0-0]     '\t(No symbol) [0x00318B81]\n' +
+[0-0]     '\t(No symbol) [0x0021B36D]\n' +
+[0-0]     '\t(No symbol) [0x0024D382]\n' +
+[0-0]     '\t(No symbol) [0x0024D4BB]\n' +
+[0-0]     '\t(No symbol) [0x00283302]\n' +
+[0-0]     '\t(No symbol) [0x0026B464]\n' +
+[0-0]     '\t(No symbol) [0x00281215]\n' +
+[0-0]     '\t(No symbol) [0x0026B216]\n' +
+[0-0]     '\t(No symbol) [0x00240D97]\n' +
+[0-0]     '\t(No symbol) [0x0024253D]\n' +
+[0-0]     '\tGetHandleVerifier [0x005FABF2+2510930]\n' +
+[0-0]     '\tGetHandleVerifier [0x00628EC1+2700065]\n' +
+[0-0]     '\tGetHandleVerifier [0x0062C86C+2714828]\n' +
+[0-0]     '\tGetHandleVerifier [0x00433480+645344]\n' +
+[0-0]     '\t(No symbol) [0x00320FD2]\n' +
+[0-0]     '\t(No symbol) [0x00326C68]\n' +
+[0-0]     '\t(No symbol) [0x00326D4B]\n' +
+[0-0]     '\t(No symbol) [0x00330D6B]\n' +
+[0-0]     '\tBaseThreadInitThunk [0x753500F9+25]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7BBE+286]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7B8E+238]\n'
+[0-0] }
+[0-0] 2023-03-25T06:57:59.655Z INFO webdriver: COMMAND findElement("xpath", "/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input")
+[0-0] 2023-03-25T06:57:59.656Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/element
+[0-0] 2023-03-25T06:57:59.656Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input'
+[0-0] }
+[0-0] 2023-03-25T06:57:59.660Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input"}\n' +
+[0-0]     '  (Session info: chrome=111.0.5563.111)',
+[0-0]   stacktrace: 'Backtrace:\n' +
+[0-0]     '\t(No symbol) [0x003837D3]\n' +
+[0-0]     '\t(No symbol) [0x00318B81]\n' +
+[0-0]     '\t(No symbol) [0x0021B36D]\n' +
+[0-0]     '\t(No symbol) [0x0024D382]\n' +
+[0-0]     '\t(No symbol) [0x0024D4BB]\n' +
+[0-0]     '\t(No symbol) [0x00283302]\n' +
+[0-0]     '\t(No symbol) [0x0026B464]\n' +
+[0-0]     '\t(No symbol) [0x00281215]\n' +
+[0-0]     '\t(No symbol) [0x0026B216]\n' +
+[0-0]     '\t(No symbol) [0x00240D97]\n' +
+[0-0]     '\t(No symbol) [0x0024253D]\n' +
+[0-0]     '\tGetHandleVerifier [0x005FABF2+2510930]\n' +
+[0-0]     '\tGetHandleVerifier [0x00628EC1+2700065]\n' +
+[0-0]     '\tGetHandleVerifier [0x0062C86C+2714828]\n' +
+[0-0]     '\tGetHandleVerifier [0x00433480+645344]\n' +
+[0-0]     '\t(No symbol) [0x00320FD2]\n' +
+[0-0]     '\t(No symbol) [0x00326C68]\n' +
+[0-0]     '\t(No symbol) [0x00326D4B]\n' +
+[0-0]     '\t(No symbol) [0x00330D6B]\n' +
+[0-0]     '\tBaseThreadInitThunk [0x753500F9+25]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7BBE+286]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7B8E+238]\n'
+[0-0] }
+[0-0] 2023-03-25T06:57:59.667Z INFO webdriver: COMMAND findElements("xpath", "/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input")
+[0-0] 2023-03-25T06:57:59.667Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/elements
+[0-0] 2023-03-25T06:57:59.667Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input'
+[0-0] }
+[0-0] 2023-03-25T06:57:59.671Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'no such element: Unable to locate element: {"method":"css selector","selector":"button[name="save"]"}\n' +
+[0-0]     '  (Session info: chrome=111.0.5563.111)',
+[0-0]   stacktrace: 'Backtrace:\n' +
+[0-0]     '\t(No symbol) [0x003837D3]\n' +
+[0-0]     '\t(No symbol) [0x00318B81]\n' +
+[0-0]     '\t(No symbol) [0x0021B36D]\n' +
+[0-0]     '\t(No symbol) [0x0024D382]\n' +
+[0-0]     '\t(No symbol) [0x0024D4BB]\n' +
+[0-0]     '\t(No symbol) [0x00283302]\n' +
+[0-0]     '\t(No symbol) [0x0026B464]\n' +
+[0-0]     '\t(No symbol) [0x00281215]\n' +
+[0-0]     '\t(No symbol) [0x0026B216]\n' +
+[0-0]     '\t(No symbol) [0x00240D97]\n' +
+[0-0]     '\t(No symbol) [0x0024253D]\n' +
+[0-0]     '\tGetHandleVerifier [0x005FABF2+2510930]\n' +
+[0-0]     '\tGetHandleVerifier [0x00628EC1+2700065]\n' +
+[0-0]     '\tGetHandleVerifier [0x0062C86C+2714828]\n' +
+[0-0]     '\tGetHandleVerifier [0x00433480+645344]\n' +
+[0-0]     '\t(No symbol) [0x00320FD2]\n' +
+[0-0]     '\t(No symbol) [0x00326C68]\n' +
+[0-0]     '\t(No symbol) [0x00326D4B]\n' +
+[0-0]     '\t(No symbol) [0x00330D6B]\n' +
+[0-0]     '\tBaseThreadInitThunk [0x753500F9+25]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7BBE+286]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7B8E+238]\n'
+[0-0] }
+[0-0] 2023-03-25T06:57:59.676Z INFO webdriver: COMMAND findElements("css selector", "button[name="save"]")
+[0-0] 2023-03-25T06:57:59.676Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/elements
+[0-0] 2023-03-25T06:57:59.676Z INFO webdriver: DATA { using: 'css selector', value: 'button[name="save"]' }
+[0-0] 2023-03-25T06:57:59.681Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'no such element: Unable to locate element: {"method":"css selector","selector":"table tbody tr:nth-child(1)"}\n' +
+[0-0]     '  (Session info: chrome=111.0.5563.111)',
+[0-0]   stacktrace: 'Backtrace:\n' +
+[0-0]     '\t(No symbol) [0x003837D3]\n' +
+[0-0]     '\t(No symbol) [0x00318B81]\n' +
+[0-0]     '\t(No symbol) [0x0021B36D]\n' +
+[0-0]     '\t(No symbol) [0x0024D382]\n' +
+[0-0]     '\t(No symbol) [0x0024D4BB]\n' +
+[0-0]     '\t(No symbol) [0x00283302]\n' +
+[0-0]     '\t(No symbol) [0x0026B464]\n' +
+[0-0]     '\t(No symbol) [0x00281215]\n' +
+[0-0]     '\t(No symbol) [0x0026B216]\n' +
+[0-0]     '\t(No symbol) [0x00240D97]\n' +
+[0-0]     '\t(No symbol) [0x0024253D]\n' +
+[0-0]     '\tGetHandleVerifier [0x005FABF2+2510930]\n' +
+[0-0]     '\tGetHandleVerifier [0x00628EC1+2700065]\n' +
+[0-0]     '\tGetHandleVerifier [0x0062C86C+2714828]\n' +
+[0-0]     '\tGetHandleVerifier [0x00433480+645344]\n' +
+[0-0]     '\t(No symbol) [0x00320FD2]\n' +
+[0-0]     '\t(No symbol) [0x00326C68]\n' +
+[0-0]     '\t(No symbol) [0x00326D4B]\n' +
+[0-0]     '\t(No symbol) [0x00330D6B]\n' +
+[0-0]     '\tBaseThreadInitThunk [0x753500F9+25]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7BBE+286]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7B8E+238]\n'
+[0-0] }
+[0-0] 2023-03-25T06:57:59.687Z INFO webdriver: RESULT []
+[0-0] 2023-03-25T06:57:59.696Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input"}\n' +
+[0-0]     '  (Session info: chrome=111.0.5563.111)',
+[0-0]   stacktrace: 'Backtrace:\n' +
+[0-0]     '\t(No symbol) [0x003837D3]\n' +
+[0-0]     '\t(No symbol) [0x00318B81]\n' +
+[0-0]     '\t(No symbol) [0x0021B36D]\n' +
+[0-0]     '\t(No symbol) [0x0024D382]\n' +
+[0-0]     '\t(No symbol) [0x0024D4BB]\n' +
+[0-0]     '\t(No symbol) [0x00283302]\n' +
+[0-0]     '\t(No symbol) [0x0026B464]\n' +
+[0-0]     '\t(No symbol) [0x00281215]\n' +
+[0-0]     '\t(No symbol) [0x0026B216]\n' +
+[0-0]     '\t(No symbol) [0x00240D97]\n' +
+[0-0]     '\t(No symbol) [0x0024253D]\n' +
+[0-0]     '\tGetHandleVerifier [0x005FABF2+2510930]\n' +
+[0-0]     '\tGetHandleVerifier [0x00628EC1+2700065]\n' +
+[0-0]     '\tGetHandleVerifier [0x0062C86C+2714828]\n' +
+[0-0]     '\tGetHandleVerifier [0x00433480+645344]\n' +
+[0-0]     '\t(No symbol) [0x00320FD2]\n' +
+[0-0]     '\t(No symbol) [0x00326C68]\n' +
+[0-0]     '\t(No symbol) [0x00326D4B]\n' +
+[0-0]     '\t(No symbol) [0x00330D6B]\n' +
+[0-0]     '\tBaseThreadInitThunk [0x753500F9+25]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7BBE+286]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7B8E+238]\n'
+[0-0] }
+[0-0] 2023-03-25T06:57:59.707Z INFO webdriver: RESULT []
+[0-0] 2023-03-25T06:57:59.718Z INFO webdriver: RESULT []
+[0-0] 2023-03-25T06:58:00.139Z INFO webdriver: COMMAND findElement("css selector", "table tbody tr:nth-child(1)")
+[0-0] 2023-03-25T06:58:00.140Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/element
+[0-0] 2023-03-25T06:58:00.140Z INFO webdriver: DATA { using: 'css selector', value: 'table tbody tr:nth-child(1)' }
+[0-0] 2023-03-25T06:58:00.147Z INFO webdriver: COMMAND findElements("css selector", "table tbody tr:nth-child(1)")
+[0-0] 2023-03-25T06:58:00.147Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/elements
+[0-0] 2023-03-25T06:58:00.147Z INFO webdriver: DATA { using: 'css selector', value: 'table tbody tr:nth-child(1)' }
+[0-0] 2023-03-25T06:58:00.149Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'no such element: Unable to locate element: {"method":"css selector","selector":"table tbody tr:nth-child(1)"}\n' +
+[0-0]     '  (Session info: chrome=111.0.5563.111)',
+[0-0]   stacktrace: 'Backtrace:\n' +
+[0-0]     '\t(No symbol) [0x003837D3]\n' +
+[0-0]     '\t(No symbol) [0x00318B81]\n' +
+[0-0]     '\t(No symbol) [0x0021B36D]\n' +
+[0-0]     '\t(No symbol) [0x0024D382]\n' +
+[0-0]     '\t(No symbol) [0x0024D4BB]\n' +
+[0-0]     '\t(No symbol) [0x00283302]\n' +
+[0-0]     '\t(No symbol) [0x0026B464]\n' +
+[0-0]     '\t(No symbol) [0x00281215]\n' +
+[0-0]     '\t(No symbol) [0x0026B216]\n' +
+[0-0]     '\t(No symbol) [0x00240D97]\n' +
+[0-0]     '\t(No symbol) [0x0024253D]\n' +
+[0-0]     '\tGetHandleVerifier [0x005FABF2+2510930]\n' +
+[0-0]     '\tGetHandleVerifier [0x00628EC1+2700065]\n' +
+[0-0]     '\tGetHandleVerifier [0x0062C86C+2714828]\n' +
+[0-0]     '\tGetHandleVerifier [0x00433480+645344]\n' +
+[0-0]     '\t(No symbol) [0x00320FD2]\n' +
+[0-0]     '\t(No symbol) [0x00326C68]\n' +
+[0-0]     '\t(No symbol) [0x00326D4B]\n' +
+[0-0]     '\t(No symbol) [0x00330D6B]\n' +
+[0-0]     '\tBaseThreadInitThunk [0x753500F9+25]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7BBE+286]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7B8E+238]\n'
+[0-0] }
+[0-0] 2023-03-25T06:58:00.154Z INFO webdriver: RESULT []
+[0-0] 2023-03-25T06:58:00.155Z INFO webdriver: COMMAND findElement("xpath", "/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input")
+[0-0] 2023-03-25T06:58:00.155Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/element
+[0-0] 2023-03-25T06:58:00.155Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input'
+[0-0] }
+[0-0] 2023-03-25T06:58:00.164Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input"}\n' +
+[0-0]     '  (Session info: chrome=111.0.5563.111)',
+[0-0]   stacktrace: 'Backtrace:\n' +
+[0-0]     '\t(No symbol) [0x003837D3]\n' +
+[0-0]     '\t(No symbol) [0x00318B81]\n' +
+[0-0]     '\t(No symbol) [0x0021B36D]\n' +
+[0-0]     '\t(No symbol) [0x0024D382]\n' +
+[0-0]     '\t(No symbol) [0x0024D4BB]\n' +
+[0-0]     '\t(No symbol) [0x00283302]\n' +
+[0-0]     '\t(No symbol) [0x0026B464]\n' +
+[0-0]     '\t(No symbol) [0x00281215]\n' +
+[0-0]     '\t(No symbol) [0x0026B216]\n' +
+[0-0]     '\t(No symbol) [0x00240D97]\n' +
+[0-0]     '\t(No symbol) [0x0024253D]\n' +
+[0-0]     '\tGetHandleVerifier [0x005FABF2+2510930]\n' +
+[0-0]     '\tGetHandleVerifier [0x00628EC1+2700065]\n' +
+[0-0]     '\tGetHandleVerifier [0x0062C86C+2714828]\n' +
+[0-0]     '\tGetHandleVerifier [0x00433480+645344]\n' +
+[0-0]     '\t(No symbol) [0x00320FD2]\n' +
+[0-0]     '\t(No symbol) [0x00326C68]\n' +
+[0-0]     '\t(No symbol) [0x00326D4B]\n' +
+[0-0]     '\t(No symbol) [0x00330D6B]\n' +
+[0-0]     '\tBaseThreadInitThunk [0x753500F9+25]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7BBE+286]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7B8E+238]\n'
+[0-0] }
+[0-0] 2023-03-25T06:58:00.170Z INFO webdriver: COMMAND findElements("xpath", "/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input")
+[0-0] 2023-03-25T06:58:00.171Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/elements
+[0-0] 2023-03-25T06:58:00.171Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input'
+[0-0] }
+[0-0] 2023-03-25T06:58:00.182Z INFO webdriver: COMMAND findElements("css selector", "button[name="save"]")
+[0-0] 2023-03-25T06:58:00.183Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/elements
+[0-0] 2023-03-25T06:58:00.183Z INFO webdriver: DATA { using: 'css selector', value: 'button[name="save"]' }
+[0-0] 2023-03-25T06:58:00.188Z INFO webdriver: RESULT []
+[0-0] 2023-03-25T06:58:00.198Z INFO webdriver: RESULT []
+[0-0] 2023-03-25T06:58:00.646Z INFO webdriver: COMMAND findElement("css selector", "table tbody tr:nth-child(1)")
+[0-0] 2023-03-25T06:58:00.646Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/element
+[0-0] 2023-03-25T06:58:00.646Z INFO webdriver: DATA { using: 'css selector', value: 'table tbody tr:nth-child(1)' }
+[0-0] 2023-03-25T06:58:00.647Z INFO webdriver: COMMAND findElements("css selector", "table tbody tr:nth-child(1)")
+[0-0] 2023-03-25T06:58:00.647Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/elements
+[0-0] 2023-03-25T06:58:00.647Z INFO webdriver: DATA { using: 'css selector', value: 'table tbody tr:nth-child(1)' }
+[0-0] 2023-03-25T06:58:00.658Z INFO webdriver: COMMAND findElement("xpath", "/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input")
+[0-0] 2023-03-25T06:58:00.658Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/element
+[0-0] 2023-03-25T06:58:00.658Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input'
+[0-0] }
+[0-0] 2023-03-25T06:58:00.661Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'no such element: Unable to locate element: {"method":"css selector","selector":"table tbody tr:nth-child(1)"}\n' +
+[0-0]     '  (Session info: chrome=111.0.5563.111)',
+[0-0]   stacktrace: 'Backtrace:\n' +
+[0-0]     '\t(No symbol) [0x003837D3]\n' +
+[0-0]     '\t(No symbol) [0x00318B81]\n' +
+[0-0]     '\t(No symbol) [0x0021B36D]\n' +
+[0-0]     '\t(No symbol) [0x0024D382]\n' +
+[0-0]     '\t(No symbol) [0x0024D4BB]\n' +
+[0-0]     '\t(No symbol) [0x00283302]\n' +
+[0-0]     '\t(No symbol) [0x0026B464]\n' +
+[0-0]     '\t(No symbol) [0x00281215]\n' +
+[0-0]     '\t(No symbol) [0x0026B216]\n' +
+[0-0]     '\t(No symbol) [0x00240D97]\n' +
+[0-0]     '\t(No symbol) [0x0024253D]\n' +
+[0-0]     '\tGetHandleVerifier [0x005FABF2+2510930]\n' +
+[0-0]     '\tGetHandleVerifier [0x00628EC1+2700065]\n' +
+[0-0]     '\tGetHandleVerifier [0x0062C86C+2714828]\n' +
+[0-0]     '\tGetHandleVerifier [0x00433480+645344]\n' +
+[0-0]     '\t(No symbol) [0x00320FD2]\n' +
+[0-0]     '\t(No symbol) [0x00326C68]\n' +
+[0-0]     '\t(No symbol) [0x00326D4B]\n' +
+[0-0]     '\t(No symbol) [0x00330D6B]\n' +
+[0-0]     '\tBaseThreadInitThunk [0x753500F9+25]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7BBE+286]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7B8E+238]\n'
+[0-0] }
+[0-0] 2023-03-25T06:58:00.665Z INFO webdriver: RESULT []
+[0-0] 2023-03-25T06:58:00.668Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input"}\n' +
+[0-0]     '  (Session info: chrome=111.0.5563.111)',
+[0-0]   stacktrace: 'Backtrace:\n' +
+[0-0]     '\t(No symbol) [0x003837D3]\n' +
+[0-0]     '\t(No symbol) [0x00318B81]\n' +
+[0-0]     '\t(No symbol) [0x0021B36D]\n' +
+[0-0]     '\t(No symbol) [0x0024D382]\n' +
+[0-0]     '\t(No symbol) [0x0024D4BB]\n' +
+[0-0]     '\t(No symbol) [0x00283302]\n' +
+[0-0]     '\t(No symbol) [0x0026B464]\n' +
+[0-0]     '\t(No symbol) [0x00281215]\n' +
+[0-0]     '\t(No symbol) [0x0026B216]\n' +
+[0-0]     '\t(No symbol) [0x00240D97]\n' +
+[0-0]     '\t(No symbol) [0x0024253D]\n' +
+[0-0]     '\tGetHandleVerifier [0x005FABF2+2510930]\n' +
+[0-0]     '\tGetHandleVerifier [0x00628EC1+2700065]\n' +
+[0-0]     '\tGetHandleVerifier [0x0062C86C+2714828]\n' +
+[0-0]     '\tGetHandleVerifier [0x00433480+645344]\n' +
+[0-0]     '\t(No symbol) [0x00320FD2]\n' +
+[0-0]     '\t(No symbol) [0x00326C68]\n' +
+[0-0]     '\t(No symbol) [0x00326D4B]\n' +
+[0-0]     '\t(No symbol) [0x00330D6B]\n' +
+[0-0]     '\tBaseThreadInitThunk [0x753500F9+25]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7BBE+286]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7B8E+238]\n'
+[0-0] }
+[0-0] 2023-03-25T06:58:00.670Z INFO webdriver: COMMAND findElements("xpath", "/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input")
+[0-0] 2023-03-25T06:58:00.671Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/elements
+[0-0] 2023-03-25T06:58:00.671Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input'
+[0-0] }
+[0-0] 2023-03-25T06:58:00.679Z INFO webdriver: COMMAND findElements("css selector", "button[name="save"]")
+[0-0] 2023-03-25T06:58:00.679Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/elements
+[0-0] 2023-03-25T06:58:00.679Z INFO webdriver: DATA { using: 'css selector', value: 'button[name="save"]' }
+[0-0] 2023-03-25T06:58:00.681Z INFO webdriver: RESULT []
+[0-0] 2023-03-25T06:58:00.686Z INFO webdriver: RESULT []
+[0-0] 2023-03-25T06:58:01.149Z INFO webdriver: COMMAND findElement("css selector", "table tbody tr:nth-child(1)")
+[0-0] 2023-03-25T06:58:01.150Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/element
+[0-0] 2023-03-25T06:58:01.150Z INFO webdriver: DATA { using: 'css selector', value: 'table tbody tr:nth-child(1)' }
+[0-0] 2023-03-25T06:58:01.151Z INFO webdriver: COMMAND findElements("css selector", "table tbody tr:nth-child(1)")
+[0-0] 2023-03-25T06:58:01.151Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/elements
+[0-0] 2023-03-25T06:58:01.151Z INFO webdriver: DATA { using: 'css selector', value: 'table tbody tr:nth-child(1)' }
+[0-0] 2023-03-25T06:58:01.157Z INFO webdriver: COMMAND findElement("xpath", "/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input")
+[0-0] 2023-03-25T06:58:01.157Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/element
+[0-0] 2023-03-25T06:58:01.157Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input'
+[0-0] }
+[0-0] 2023-03-25T06:58:01.160Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '582b6404-75e2-443f-9ba6-e3df10d30a22'
+[0-0] }
+[0-0] 2023-03-25T06:58:01.165Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2023-03-25T06:58:01.165Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/execute/sync
+[0-0] 2023-03-25T06:58:01.166Z INFO webdriver: DATA {
+[0-0]   script: 'isElementDisplayed(...) [8007 bytes]',
+[0-0]   args: [
+[0-0]     {
+[0-0]       'element-6066-11e4-a52e-4f735466cecf': '582b6404-75e2-443f-9ba6-e3df10d30a22',
+[0-0]       ELEMENT: '582b6404-75e2-443f-9ba6-e3df10d30a22'
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2023-03-25T06:58:01.168Z INFO webdriver: COMMAND findElements("xpath", "/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input")
+[0-0] 2023-03-25T06:58:01.168Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/elements
+[0-0] 2023-03-25T06:58:01.169Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input'
+[0-0] }
+[0-0] 2023-03-25T06:58:01.171Z INFO webdriver: RESULT [
+[0-0]   {
+[0-0]     'element-6066-11e4-a52e-4f735466cecf': '582b6404-75e2-443f-9ba6-e3df10d30a22'
+[0-0]   }
+[0-0] ]
+[0-0] 2023-03-25T06:58:01.174Z INFO webdriver: COMMAND findElement("css selector", "table tbody tr:nth-child(1)")
+[0-0] 2023-03-25T06:58:01.175Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/element
+[0-0] 2023-03-25T06:58:01.175Z INFO webdriver: DATA { using: 'css selector', value: 'table tbody tr:nth-child(1)' }
+[0-0] 2023-03-25T06:58:01.176Z INFO webdriver: COMMAND findElements("css selector", "button[name="save"]")
+[0-0] 2023-03-25T06:58:01.177Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/elements
+[0-0] 2023-03-25T06:58:01.177Z INFO webdriver: DATA { using: 'css selector', value: 'button[name="save"]' }
+[0-0] 2023-03-25T06:58:01.180Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input"}\n' +
+[0-0]     '  (Session info: chrome=111.0.5563.111)',
+[0-0]   stacktrace: 'Backtrace:\n' +
+[0-0]     '\t(No symbol) [0x003837D3]\n' +
+[0-0]     '\t(No symbol) [0x00318B81]\n' +
+[0-0]     '\t(No symbol) [0x0021B36D]\n' +
+[0-0]     '\t(No symbol) [0x0024D382]\n' +
+[0-0]     '\t(No symbol) [0x0024D4BB]\n' +
+[0-0]     '\t(No symbol) [0x00283302]\n' +
+[0-0]     '\t(No symbol) [0x0026B464]\n' +
+[0-0]     '\t(No symbol) [0x00281215]\n' +
+[0-0]     '\t(No symbol) [0x0026B216]\n' +
+[0-0]     '\t(No symbol) [0x00240D97]\n' +
+[0-0]     '\t(No symbol) [0x0024253D]\n' +
+[0-0]     '\tGetHandleVerifier [0x005FABF2+2510930]\n' +
+[0-0]     '\tGetHandleVerifier [0x00628EC1+2700065]\n' +
+[0-0]     '\tGetHandleVerifier [0x0062C86C+2714828]\n' +
+[0-0]     '\tGetHandleVerifier [0x00433480+645344]\n' +
+[0-0]     '\t(No symbol) [0x00320FD2]\n' +
+[0-0]     '\t(No symbol) [0x00326C68]\n' +
+[0-0]     '\t(No symbol) [0x00326D4B]\n' +
+[0-0]     '\t(No symbol) [0x00330D6B]\n' +
+[0-0]     '\tBaseThreadInitThunk [0x753500F9+25]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7BBE+286]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7B8E+238]\n'
+[0-0] }
+[0-0] 2023-03-25T06:58:01.184Z INFO webdriver: RESULT true
+[0-0] 2023-03-25T06:58:01.187Z INFO webdriver: RESULT []
+[0-0] 2023-03-25T06:58:01.194Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '582b6404-75e2-443f-9ba6-e3df10d30a22'
+[0-0] }
+[0-0] 2023-03-25T06:58:01.197Z INFO webdriver: COMMAND elementClick("582b6404-75e2-443f-9ba6-e3df10d30a22")
+[0-0] 2023-03-25T06:58:01.197Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/element/582b6404-75e2-443f-9ba6-e3df10d30a22/click[0-0] 2023-03-25T06:58:01.199Z INFO webdriver: RESULT []
+[0-0] 2023-03-25T06:58:01.237Z INFO webdriver: RESULT null
+[0-0] 2023-03-25T06:58:01.668Z INFO webdriver: COMMAND findElement("xpath", "/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input")
+[0-0] 2023-03-25T06:58:01.668Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/element
+[0-0] 2023-03-25T06:58:01.668Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input'
+[0-0] }
+[0-0] 2023-03-25T06:58:01.669Z INFO webdriver: COMMAND findElements("xpath", "/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input")
+[0-0] 2023-03-25T06:58:01.669Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/elements
+[0-0] 2023-03-25T06:58:01.669Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input'
+[0-0] }
+[0-0] 2023-03-25T06:58:01.675Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input"}\n' +
+[0-0]     '  (Session info: chrome=111.0.5563.111)',
+[0-0]   stacktrace: 'Backtrace:\n' +
+[0-0]     '\t(No symbol) [0x003837D3]\n' +
+[0-0]     '\t(No symbol) [0x00318B81]\n' +
+[0-0]     '\t(No symbol) [0x0021B36D]\n' +
+[0-0]     '\t(No symbol) [0x0024D382]\n' +
+[0-0]     '\t(No symbol) [0x0024D4BB]\n' +
+[0-0]     '\t(No symbol) [0x00283302]\n' +
+[0-0]     '\t(No symbol) [0x0026B464]\n' +
+[0-0]     '\t(No symbol) [0x00281215]\n' +
+[0-0]     '\t(No symbol) [0x0026B216]\n' +
+[0-0]     '\t(No symbol) [0x00240D97]\n' +
+[0-0]     '\t(No symbol) [0x0024253D]\n' +
+[0-0]     '\tGetHandleVerifier [0x005FABF2+2510930]\n' +
+[0-0]     '\tGetHandleVerifier [0x00628EC1+2700065]\n' +
+[0-0]     '\tGetHandleVerifier [0x0062C86C+2714828]\n' +
+[0-0]     '\tGetHandleVerifier [0x00433480+645344]\n' +
+[0-0]     '\t(No symbol) [0x00320FD2]\n' +
+[0-0]     '\t(No symbol) [0x00326C68]\n' +
+[0-0]     '\t(No symbol) [0x00326D4B]\n' +
+[0-0]     '\t(No symbol) [0x00330D6B]\n' +
+[0-0]     '\tBaseThreadInitThunk [0x753500F9+25]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7BBE+286]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x76ED7B8E+238]\n'
+[0-0] }
+[0-0] 2023-03-25T06:58:01.678Z INFO webdriver: COMMAND findElements("css selector", "button[name="save"]")
+[0-0] 2023-03-25T06:58:01.678Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/elements
+[0-0] 2023-03-25T06:58:01.678Z INFO webdriver: DATA { using: 'css selector', value: 'button[name="save"]' }
+[0-0] 2023-03-25T06:58:01.681Z INFO webdriver: RESULT []
+[0-0] 2023-03-25T06:58:01.685Z INFO webdriver: RESULT []
+[0-0] 2023-03-25T06:58:02.159Z INFO webdriver: COMMAND findElement("xpath", "/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input")
+[0-0] 2023-03-25T06:58:02.159Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/element
+[0-0] 2023-03-25T06:58:02.159Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input'
+[0-0] }
+[0-0] 2023-03-25T06:58:02.173Z INFO webdriver: COMMAND findElements("xpath", "/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input")
+[0-0] 2023-03-25T06:58:02.173Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/elements
+[0-0] 2023-03-25T06:58:02.174Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input'
+[0-0] }
+[0-0] 2023-03-25T06:58:02.176Z INFO webdriver: COMMAND findElements("css selector", "button[name="save"]")
+[0-0] 2023-03-25T06:58:02.176Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/elements
+[0-0] 2023-03-25T06:58:02.176Z INFO webdriver: DATA { using: 'css selector', value: 'button[name="save"]' }
+[0-0] 2023-03-25T06:58:02.180Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': 'a96030e4-718c-4cfc-ad7d-34965bd4817b'
+[0-0] }
+[0-0] 2023-03-25T06:58:02.185Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2023-03-25T06:58:02.186Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/execute/sync
+[0-0] 2023-03-25T06:58:02.186Z INFO webdriver: DATA {
+[0-0]   script: 'isElementDisplayed(...) [8007 bytes]',
+[0-0]   args: [
+[0-0]     {
+[0-0]       'element-6066-11e4-a52e-4f735466cecf': 'a96030e4-718c-4cfc-ad7d-34965bd4817b',
+[0-0]       ELEMENT: 'a96030e4-718c-4cfc-ad7d-34965bd4817b'
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2023-03-25T06:58:02.190Z INFO webdriver: RESULT [
+[0-0]   {
+[0-0]     'element-6066-11e4-a52e-4f735466cecf': 'a96030e4-718c-4cfc-ad7d-34965bd4817b'
+[0-0]   }
+[0-0] ]
+[0-0] 2023-03-25T06:58:02.194Z INFO webdriver: COMMAND findElement("xpath", "/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input")
+[0-0] 2023-03-25T06:58:02.194Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/element
+[0-0] 2023-03-25T06:58:02.195Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '/html/body/app-root/app-clients/section/app-client-details/div[2]/div/app-client-contacts/form[2]/div[4]/div[1]/input'
+[0-0] }
+[0-0] 2023-03-25T06:58:02.209Z INFO webdriver: RESULT [
+[0-0]   {
+[0-0]     'element-6066-11e4-a52e-4f735466cecf': '612cbe0c-2f09-4776-93a2-021d4aa656fd'
+[0-0]   }
+[0-0] ]
+[0-0] 2023-03-25T06:58:02.213Z INFO webdriver: COMMAND findElement("css selector", "button[name="save"]")
+[0-0] 2023-03-25T06:58:02.214Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/element
+[0-0] 2023-03-25T06:58:02.214Z INFO webdriver: DATA { using: 'css selector', value: 'button[name="save"]' }
+[0-0] 2023-03-25T06:58:02.225Z INFO webdriver: RESULT false
+[0-0] 2023-03-25T06:58:02.242Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': 'a96030e4-718c-4cfc-ad7d-34965bd4817b'
+[0-0] }
+[0-0] 2023-03-25T06:58:02.245Z INFO webdriver: COMMAND elementClick("a96030e4-718c-4cfc-ad7d-34965bd4817b")
+[0-0] 2023-03-25T06:58:02.246Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/element/a96030e4-718c-4cfc-ad7d-34965bd4817b/click[0-0] 2023-03-25T06:58:02.256Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '612cbe0c-2f09-4776-93a2-021d4aa656fd'
+[0-0] }
+[0-0] 2023-03-25T06:58:02.260Z INFO webdriver: COMMAND elementClick("612cbe0c-2f09-4776-93a2-021d4aa656fd")
+[0-0] 2023-03-25T06:58:02.260Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/element/612cbe0c-2f09-4776-93a2-021d4aa656fd/click[0-0] 2023-03-25T06:58:02.289Z WARN webdriver: Request failed with status 400 due to element not interactable
+[0-0]   (Session info: chrome=111.0.5563.111)
+[0-0] 2023-03-25T06:58:02.290Z INFO webdriver: Retrying 1/3
+[0-0] 2023-03-25T06:58:02.290Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/element/a96030e4-718c-4cfc-ad7d-34965bd4817b/click[0-0] 2023-03-25T06:58:02.308Z WARN webdriver: Request failed with status 400 due to element not interactable
+[0-0]   (Session info: chrome=111.0.5563.111)
+[0-0] 2023-03-25T06:58:02.308Z INFO webdriver: Retrying 1/3
+[0-0] 2023-03-25T06:58:02.308Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/element/612cbe0c-2f09-4776-93a2-021d4aa656fd/click[0-0] 2023-03-25T06:58:02.343Z WARN webdriver: Request failed with status 400 due to element not interactable
+[0-0]   (Session info: chrome=111.0.5563.111)
+[0-0] 2023-03-25T06:58:02.343Z INFO webdriver: Retrying 2/3
+[0-0] 2023-03-25T06:58:02.343Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/element/a96030e4-718c-4cfc-ad7d-34965bd4817b/click[0-0] 2023-03-25T06:58:02.358Z WARN webdriver: Request failed with status 400 due to element not interactable
+[0-0]   (Session info: chrome=111.0.5563.111)
+[0-0] 2023-03-25T06:58:02.358Z INFO webdriver: Retrying 2/3
+[0-0] 2023-03-25T06:58:02.358Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/element/612cbe0c-2f09-4776-93a2-021d4aa656fd/click[0-0] 2023-03-25T06:58:02.379Z WARN webdriver: Request failed with status 400 due to element not interactable
+[0-0]   (Session info: chrome=111.0.5563.111)
+[0-0] 2023-03-25T06:58:02.379Z INFO webdriver: Retrying 3/3
+[0-0] 2023-03-25T06:58:02.379Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/element/a96030e4-718c-4cfc-ad7d-34965bd4817b/click[0-0] 2023-03-25T06:58:02.408Z WARN webdriver: Request failed with status 400 due to element not interactable
+[0-0]   (Session info: chrome=111.0.5563.111)
+[0-0] 2023-03-25T06:58:02.408Z INFO webdriver: Retrying 3/3
+[0-0] 2023-03-25T06:58:02.408Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/element/612cbe0c-2f09-4776-93a2-021d4aa656fd/click[0-0] 2023-03-25T06:58:02.442Z INFO webdriver: RESULT null
+[0-0] 2023-03-25T06:58:02.464Z INFO webdriver: RESULT null
+[0-0] 2023-03-25T06:58:02.655Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2023-03-25T06:58:02.655Z INFO webdriver: [POST] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48/execute/sync
+[0-0] 2023-03-25T06:58:02.655Z INFO webdriver: DATA {
+[0-0]   script: 'isElementDisplayed(...) [8007 bytes]',
+[0-0]   args: [
+[0-0]     {
+[0-0]       'element-6066-11e4-a52e-4f735466cecf': 'a96030e4-718c-4cfc-ad7d-34965bd4817b',
+[0-0]       ELEMENT: 'a96030e4-718c-4cfc-ad7d-34965bd4817b'
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2023-03-25T06:58:02.660Z INFO webdriver: RESULT true
+[0-0] 2023-03-25T06:58:09.616Z INFO webdriver: COMMAND deleteSession()
+[0-0] 2023-03-25T06:58:09.617Z INFO webdriver: [DELETE] http://localhost:9515/session/d4c2cd1555316b95863dc0db78220b48
+[0-0] 2023-03-25T06:58:09.619Z INFO webdriver: RESULT null
+[0-0] PASSED in chrome - file:///C:/Users/Osman/Documents/1osman/Projects/QA/autotests/test/specs/edit.spec.js
+2023-03-25T06:58:09.740Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2023-03-25T06:58:09.741Z INFO @wdio/cli:launcher: Run onComplete hook
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[chrome 111.0.5563.111 windows #0-0] Running: chrome (v111.0.5563.111) on windows
+[chrome 111.0.5563.111 windows #0-0] Session ID: d4c2cd1555316b95863dc0db78220b48
+[chrome 111.0.5563.111 windows #0-0]
+[chrome 111.0.5563.111 windows #0-0] » \test\specs\edit.spec.js
+[chrome 111.0.5563.111 windows #0-0] Login page
+[chrome 111.0.5563.111 windows #0-0]    ✓ should allow a user to log in successfully
+[chrome 111.0.5563.111 windows #0-0]    ✓ view the first client and click checkbox "Не звонить за отзывами"
+[chrome 111.0.5563.111 windows #0-0]
+[chrome 111.0.5563.111 windows #0-0] 2 passing (20.1s)
+
+
+Spec Files:      1 passed, 1 total (100% completed) in 00:00:21
+
+2023-03-25T06:58:09.744Z INFO @wdio/local-runner: Shutting down spawned worker
+2023-03-25T06:58:10.001Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully
+2023-03-25T06:58:10.001Z INFO @wdio/local-runner: shutting down

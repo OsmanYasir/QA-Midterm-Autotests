@@ -1,0 +1,31 @@
+const LoginPage = require('../pageobjects/login.page');
+
+describe('Login page', () => {
+  before(async () => {
+    await LoginPage.open();
+  });
+
+  it('should allow a user to log in successfully', async () => {
+    await LoginPage.login('Admin', 'Admin@Navi');
+  });   
+
+  it('should open search form and perform spent bonus filtering', async () => {
+    const searchForm = await $('.search-form.user-search-form.with-options');
+    searchForm.click();
+    await browser.pause(1000);
+  
+    const spentBonusFilter = await $('app-client-total-bonus-spent-filter');
+    await spentBonusFilter.waitForDisplayed({ timeout: 5000 });
+    spentBonusFilter.click();
+  
+    const option5001 = await $('/html/body/app-root/app-clients/header/aside/div[1]/app-client-total-bonus-spent-filter/div/div[2]/div[3]');
+    await option5001.waitForDisplayed({ timeout: 5000 });
+    option5001.click();
+  
+    await browser.pause(15000);
+  });
+
+
+
+  
+});
